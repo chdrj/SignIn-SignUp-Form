@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img src="./img/avatar.png" alt="" />
+            <h3></h3>
+            <p>Welcome Back!</p>
+            <script>
+                // Function to parse URL parameters
+                function getParameterByName(name, url) {
+                  if (!url) url = window.location.href;
+                  name = name.replace(/[\[\]]/g, "\\$&");
+                  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                      results = regex.exec(url);
+                  if (!results) return null;
+                  if (!results[2]) return '';
+                  return decodeURIComponent(results[2].replace(/\+/g, " "));
+                }
+            
+                // Get username from URL parameter
+                var username = getParameterByName('username');
+                if (username) {
+                  // Display username dynamically within the HTML content
+                  document.getElementById('username-display').innerText = 'Welcome, ' + username + '!';
+                }
+              </script>
+          </div>
+          <h2>Number of items bought</h2>
+          <div class="links">
+            <div class="link">
+              <img src="./img/twitch.png" alt="" />
+              <h2>54 apples</h2>
+            </div>
+            <div class="link">
+              <img src="./img/steam.png" alt="" />
+              <h2> 10 soaps</h2>
+            </div>
+            <div class="link">
+              <img src="./img/upcoming.png" alt="" />
+              <h2>21 waters</h2>
+            </div>
+            <div class="link">
+              <img src="./img/library.png" alt="" />
+              <h2>90 plays</h2>
+            </div>
+          </div>
+          <div class="pro">
+            <h2>Join us to make him happy!</h2>
+            <img src="./img/controller.png" alt="" style="margin-top: 25px;" />
+            </div>
+        </div>
+        <div class="games">
+          <div class="status">
+            <h1>Don't Skip Classes!</h1>
+            <input type="text" />
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="./img/assassins.png" alt="" />
+              <div class="card-info">
+                <h2>Math 33A</h2>
+                <p>Prof: Tongou Yang</p>
+                <div class="progress"></div>
+              </div>
+              <h2 class="percentage">60%</h2>
+            </div>
+            <div class="card">
+              <img src="./img/sackboy.png" alt="" />
+              <div class="card-info">
+                <h2>Physics 1A</h2>
+                <p>Prof: David Saltzberg</p>
+                <div class="progress"></div>
+              </div>
+              <h2 class="percentage">60%</h2>
+            </div>
+            <div class="card">
+              <img src="./img/spiderman.png" alt="" />
+              <div class="card-info">
+                <h2>CS 35L</h2>
+                <p>Prof: Paul R Eggert</p>
+                <div class="progress"></div>
+              </div>
+              <h2 class="percentage">60 %</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </body>
+</html>
