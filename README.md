@@ -1,0 +1,1 @@
+A website to accompany the [BruinsHaveClass]([https://example.com](https://github.com/aroy23/BruinsHaveClass)) application where you can create an account and log in to view statistics based on your signed-up classes, and items you've bought for your bear.
